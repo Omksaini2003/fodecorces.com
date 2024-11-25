@@ -1,0 +1,30 @@
+{
+  "name": "fodecorces.com",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "version": "1.0.0",
+  "description": "\"# fodecorces.com\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w apps/backend\" \"npm run dev -w apps/frontend\"",
+    "build": "npm run build -w apps/backend && npm run build -w apps/frontend",
+    "start": "npm run start -w apps/backend && npm run start -w apps/frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "concurrently": "^9.1.0",
+    "prisma": "^5.22.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "dotenv": "^16.4.5"
+  }
+}
