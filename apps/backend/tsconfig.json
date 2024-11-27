@@ -1,8 +1,18 @@
 {
-      "extends": "../../tsconfig.json",
-      "compilerOptions": {
-        "outDir": "./dist"
-      },
-      "include": ["**/*.ts"]
+  "extends": "../../tsconfig.json",
+  // "include": [
+  //   "**/*.ts"
+  // ],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "ESNext",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src"
+  ]
 }
-    
